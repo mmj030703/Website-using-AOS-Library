@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotopiX</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="./index.html"><p>Photo<span>pi</span>X</p></a>
+            </div>
+            <ul class="nav_links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="icons">
+                <i class="search fa fa-search"></i>
+                <button class="btn">Login</button>
+            </div>
+        </nav>
+    </header>
+    <section class="header_text">
+        <i class="camera fa fa-camera" data-aos="fade" data-aos-offset="150" data-aos-duration="1200"></i>
+        <p data-aos="zoom-in" data-aos-offset="150" data-aos-duration="1100">Capturing the moments that captivate your heart.</p>
+        <input type="text" placeholder="Search here...">
+        <button class="btn"><i class="search fa fa-search"></i></button>
+    </section>
+    <main>
+        <section class="gallery_portfolio_container" id="gallery">
+            <div class="gallery_header">
+                <ul class="gallery_menu">
+                    <li class="item btn_2" data-filter="all">All</li>
+                    <li class="item" data-filter="nature">Nature</li>
+                    <li class="item" data-filter="fashion">Fashion</li>
+                    <li class="item" data-filter="wedding">Wedding</li>
+                </ul>
+            </div> 
+            <div class="gallery_porfolio">
+                <img data-aos="flip-right" data-aos-offset="150" data-aos-duration="900" data-aos-delay="100" class="nature" src="./Images/p1.jpg" alt="bird">
+                <img data-aos="flip-right" data-aos-offset="150" data-aos-duration="900" data-aos-delay="200" class="nature" src="./Images/p2.jpg" alt="waterfall">
+                <img data-aos="flip-right" data-aos-offset="150" data-aos-duration="900" data-aos-delay="300" class="nature" src="./Images/p3.jpg" alt="mountain climbing">
+                <img data-aos="fade-up" data-aos-offset="150" data-aos-duration="900" data-aos-delay="100" class="fashion" src="./Images/p4.jpg" alt="river side">
+                <img data-aos="fade-up" data-aos-offset="150" data-aos-duration="900" data-aos-delay="200" class="fashion" src="./Images/p5.jpg" alt="bride">
+                <img data-aos="fade-up" data-aos-offset="150" data-aos-duration="900" data-aos-delay="300" class="nature" src="./Images/p6.jpg" alt="forest">
+                <img data-aos="zoom-in-left" data-aos-offset="150" data-aos-duration="900" data-aos-delay="100" class="wedding" src="./Images/p7.jpg" alt="river side">
+                <img data-aos="zoom-in-left" data-aos-offset="150" data-aos-duration="900" data-aos-delay="200" class="fashion" src="./Images/p8.jpg" alt="man in ship moving in ocean">
+                <img data-aos="zoom-in-left" data-aos-offset="150" data-aos-duration="900" data-aos-delay="300" class="wedding" src="./Images/p9.jpg" alt="hand holding a glass of juice">
+            </div>           
+        </section>
+    </main>
+    <section class="member_container">
+        <div class="header" data-aos="fade-up" data-aos-offset="150" data-aos-duration="900">
+            <h1>Our <span>Information</span></h1>
+            <p>What our member says.</p>
+        </div>
+        <img src="./Images/member.png" data-aos="zoom-in" data-aos-offset="150" data-aos-duration="900" alt="member image">
+        <p class="description" data-aos="fade-up" data-aos-offset="150" data-aos-duration="900">From Rajasthan doing gym is good for healthy life. It helps our body to fit. It releases stress from our mind. From Rajasthan doing gym is good for healthy life. It helps our body to fit. It releases stress from our mind.</p>
+        <h1 class="member_name" data-aos="fade-up" data-aos-offset="150" data-aos-duration="900">Maria Sharapova</h1>
+        <div class="social_media_icons" data-aos="fade-up" data-aos-offset="150" data-aos-duration="900">
+            <img src="./Images/icon1.png" alt="facebook icon">
+            <img src="./Images/icon2.png" alt="instagram icon">
+            <img src="./Images/icon3.png" alt="whatsapp icon">
+            <img src="./Images/icon4.png" alt="twitter icon">
+        </div>
+        <div class="member_images" data-aos="zoom-in" data-aos-offset="150" data-aos-duration="900">
+            <img src="./Images/s1.jpg" alt="facebook icon">
+            <img src="./Images/s2.jpg" alt="instagram icon">
+            <img src="./Images/s3.jpg" alt="whatsapp icon">
+            <img src="./Images/s4.jpg" alt="twitter icon">
+            <img src="./Images/s5.jpg" alt="twitter icon">
+            <img src="./Images/s6.jpg" alt="twitter icon">
+        </div>
+    </section>
+    <section class="footer_container">
+        <div class="newsletter" data-aos="fade-up" data-aos-offset="150" data-aos-duration="900">
+            <div class="newsletter_header">
+                <h1>Subscribe our newsletter</h1>
+                <p>We’re a team of non-cynics who truly care for our work.</p>
+            </div>
+            <div class="newsletter_subscribe">
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="footer_links" data-aos="fade-up" data-aos-offset="150" data-aos-duration="1100">
+            <div class="col col_one_links">
+                <h1>Infromation</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, velit!</p>
+                <div class="social_media_icons">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-telegram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <div class="col col_two_links">
+                <h1>Useful Links</h1>
+                <ul>
+                    <li>About us</li>
+                    <li>Gallery</li>
+                    <li>Blog posts</li>
+                    <li>Pricing Plans</li>
+                </ul>
+            </div>
+            <div class="col col_three_links">
+                <h1>Details</h1>
+                <ul>
+                    <li>Photographers</li>
+                    <li>Gallery</li>
+                    <li>About</li>
+                    <li>Pricing Plans</li>
+                </ul>
+            </div>
+            <div class="col col_four_links">
+                <h1>Help & Support</h1>
+                <ul>
+                    <li>Privacy policy</li>
+                    <li>Term & conditions</li>
+                    <li>Technical support</li>
+                    <li>Customer care</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="./filterGalleryPortfolio.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(() => {
+
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary_font_color: rgba(255, 0, 0, 0.6);
+    --secondary_font_color: rgba(255, 0, 0, 0.7);
+}
+
+body {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*********************************** Header Section Starts Here  ***********************************/
+header {
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./Images/banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 1em 4em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 1px solid grey;
+}
+
+header nav .logo {
+    font-size: 2rem;
+}
+
+header nav .logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+header nav .logo span {
+    color: var(--primary_font_color);
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    padding: 0px 1.5em;
+    font-size: 1.1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+header nav ul li a:hover {
+    color: var(--secondary_font_color);
+}
+
+header nav ul li:first-child a {
+    color: var(--secondary_font_color);
+}
+
+/*********************************** Header Section Ends Here  ***********************************/
+
+/*********************************** Header-Text Section Starts Here  ***********************************/
+
+.header_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    color: #fff;
+    text-align: center;
+    max-width: 600px;
+}
+
+.header_text .camera {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.header_text p {
+    font-size: 2.6rem;
+    line-height: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.header_text input {
+    border: none;
+    outline: none;
+    padding: .8em .5em;
+    border-radius: 5px;
+    width: 60%;
+    font-size: 20px;
+}
+
+.header_text button {
+    width: 30%;
+    font-size: 20px;
+    padding: .8em .5em;
+    margin-left: 0;
+}
+
+/*********************************** Header-Text Section Ends Here  ***********************************/
+
+/*********************************** Gallery Portfolio Section Starts Here  ***********************************/
+
+.gallery_portfolio_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.gallery_portfolio_container .gallery_header {}
+
+.gallery_portfolio_container .gallery_header .gallery_menu {
+    display: flex;
+    align-items: center;
+}
+
+.gallery_portfolio_container .gallery_header .gallery_menu li {
+    list-style: none;
+    font-size: 1.2rem;
+    padding: .6em 1.3em;
+    cursor: pointer;
+}
+
+.gallery_portfolio_container .gallery_header .gallery_menu li.active {
+    color: #fff;
+    background-color: var(--secondary_font_color);
+}
+
+.gallery_porfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.gallery_porfolio img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 10px;
+    transition: all .6s ease;
+}
+/*********************************** Gallery Portfolio Section Ends Here  ***********************************/
+
+/*********************************** Member Section Starts Here  ***********************************/
+.member_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.member_container .header h1 {
+    font-size: 1.8rem;
+}
+
+.member_container .header h1 span {
+    color: var(--primary_font_color);
+}
+
+.member_container > img {
+    margin: 2rem 0rem;
+}
+
+.member_container .description {
+    max-width: 550px;
+    margin-bottom: 1rem;
+    line-height: 1.7rem;
+}
+
+.member_container .social_media_icons {
+    margin: 1rem 0rem 1.7rem;
+}
+
+.member_container .social_media_icons img {
+    width: 100px;
+}
+
+.member_container .member_images {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.member_container .member_images img {
+    width: 195px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.member_container .member_images img:hover {
+    scale: 1.5;
+}
+/*********************************** Member Section Ends Here  ***********************************/
+
+/*********************************** Footer Section Starts Here  ***********************************/
+.footer_container {
+    background-color: #262626;
+    padding: 4em 5em;
+    color: #fff;
+}
+
+.footer_container .newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 2em 2em;
+}
+
+.footer_container .newsletter .newsletter_header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.footer_container .newsletter .newsletter_header, .footer_container .newsletter .newsletter_subscribe {
+    flex-basis: 50%;
+}
+
+.footer_container .newsletter .newsletter_header h1 {
+    font-size: 1.8rem;
+}
+
+.footer_container .newsletter .newsletter_header p {
+    font-size: 1.1rem;
+}
+
+.footer_container .newsletter .newsletter_subscribe {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.footer_container .newsletter .newsletter_subscribe input {
+    width: 50%;
+    border-radius: 10px 0px 0px 10px;
+    padding: 1.3em 1em;
+}
+
+.footer_container .newsletter .newsletter_subscribe button {
+    border-radius: 0px 10px 10px 0px;
+    background-color: var(--primary_font_color);
+    color: #fff;
+    padding: 1.3em 2em;
+}
+
+.footer_container .newsletter .newsletter_subscribe input,
+.footer_container .newsletter .newsletter_subscribe button {
+    font-size: .9rem;
+    outline: none;
+    border: none;
+}
+
+.footer_links {
+    display: flex;
+    padding: 2em 0em;
+    column-gap: 7rem;
+    border-bottom: 1px solid grey;
+}
+
+.footer_links .col_one_links, .footer_links .col {
+    flex: 0 1 25%;
+}
+
+.footer_links .col h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.footer_links .col li {
+    padding: .5em 0em;
+    cursor: pointer;
+    list-style: none;
+}
+
+.footer_links .col li:hover {
+    color: #fff;
+}
+
+.footer_links .col_one_links p, .footer_links .col li {
+    font-size: 1.3rem;
+    color: grey;
+}
+
+.footer_links .col_one_links p {
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer_links .social_media_icons {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.footer_links .social_media_icons i {
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    padding: .5rem;
+    cursor: pointer;
+    border: 1px solid #fff;   
+}
+
+.footer_links .social_media_icons i:hover {
+    color: #fff;
+    background: #808080;
+}
+/*********************************** Footer Section Ends Here  ***********************************/
+
+/** Utility Classes  */
+
+.btn, .btn_2 {
+    padding: .7em 1.7em;
+    border: none;
+    background-color: var(--secondary_font_color);
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+.btn_2 {
+    padding: 0;
+    margin-left: 0;
+}
